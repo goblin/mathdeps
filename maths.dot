@@ -1,0 +1,57 @@
+digraph Maths {
+	rankdir=BT;
+	ratio=0.75;
+	
+	a [label="arithmetic"];
+	alnt [label="algebraic number theory"];
+	annt [label="analytic number theory"];
+	ca [label="complex analysis"];
+	c [label="combinatorics"];
+	dg [label="differential geometry"];
+	ea [label="elementary algebra"];
+	ec [label="elementary combinatorics"];
+	eg [label="euclidean geometry"];
+	ent [label="elementary number theory"];
+	ep [label="elementary probability"];
+	Gt [label="Galois theory"];
+	gt [label="group theory"];
+	la [label="linear algebra"];
+	l [label="logic"];
+	mt [label="measure theory"];
+	mvc [label="multivariable calculus"];
+	ode [label="ODEs"];
+	pde [label="PDEs"];
+	pst [label="point-set topology"];
+	pt [label="probability theory"];
+	ra [label="real analysis"];
+	rft [label="ring/field theory"];
+	rt [label="representation theory"];
+	st [label="set theory"];
+	svc [label="single-variable calculus"];
+
+	l -> st [dir=both];
+	a -> ea -> gt -> rft -> Gt -> rt;
+	ea -> ec -> ep -> c;
+	ea -> ent -> alnt;
+	Gt -> alnt;
+	ent -> annt;
+	ea -> svc -> mvc -> dg;
+	ea -> la -> ode -> pde;
+	ea -> eg;
+	mvc -> pde;
+	la -> pt;
+	la -> mvc;
+	la -> rft;
+	mvc -> ca [dir=both];
+	ca -> annt;
+	svc -> ra [dir=both, color=red];
+	svc -> c;
+	svc -> ode;
+	ra -> mt -> pt;
+	ra -> pst;
+	st -> ra;
+	ep -> pt;
+	ra -> pde;
+	rft -> c;
+
+}
