@@ -1,3 +1,10 @@
 This contains a graph of mathematics subject dependencies.
 
 Created from a post in http://forums.xkcd.com/viewtopic.php?f=17&t=69851
+
+Quick reference, copy&pasted from ++$_'s post:
+
+All requirements are transitive. Note that double-headed arrows normally
+mean that you can start learning either of the two subjects before the
+other, except for the single red arrow, which indicates that you should
+learn them both at basically the same time (at least in my opinion).
